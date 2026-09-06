@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jatin — Front-End Developer</title>
+<meta name="description" content="Portfolio of Jatin, a front-end developer building interactive dashboards, players and tools.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="#home" class="brand">JT<span>.</span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-links" id="navLinks">
+      <a href="#home" class="nav-link">Home</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#now" class="nav-link">Now</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="home">
+  <p class="eyebrow">// front-end developer</p>
+  <h1>Jatin</h1>
+  <p class="hero-sub">I build interfaces that keep time and keep rhythm — dashboards, players and tools people come back to.</p>
+  <div class="hero-cta">
+    <a href="#projects" class="btn btn-primary">View projects</a>
+    <a href="#contact" class="btn btn-ghost">Get in touch</a>
+  </div>
+  <div class="clock-strip" id="clockStrip" aria-label="Live local time in five cities"></div>
+  <p class="repo-badge" id="repoBadge"></p>
+</header>
+
+<section class="about reveal">
+  <p>Final-year B.Tech Computer Science student at AKTU, based in Jhansi. I like turning plain data — time zones, audio streams, market prices — into interfaces that feel obvious to use. Currently clearing my last academic backlog and shipping projects alongside it.</p>
+</section>
+
+<section class="skills reveal" id="skills">
+  <p class="eyebrow">// 01 — skills</p>
+  <h2>What I build with</h2>
+  <div class="skill-grid">
+    <span class="skill-chip">HTML</span>
+    <span class="skill-chip">CSS</span>
+    <span class="skill-chip">JavaScript</span>
+    <span class="skill-chip">React</span>
+    <span class="skill-chip">Git &amp; GitHub</span>
+    <span class="skill-chip">REST APIs</span>
+    <span class="skill-chip">Responsive Design</span>
+    <span class="skill-chip"></span>
+  </div>
+</section>
+
+<section class="projects reveal" id="projects">
+  <p class="eyebrow">// 02 — projects</p>
+  <h2>Selected work</h2>
+  <div class="project-grid">
+
+    <article class="project-card" style="--accent:var(--teal)">
+      <h3>Musicc</h3>
+      <p>A full-stack YouTube-powered music player — JWT auth, offline caching and a real now-playing experience.</p>
+      <div class="tags">
+        <span>React</span><span>Supabase</span><span>Web Audio API</span><span>IndexedDB</span>
+      </div>
+      <div class="links">
+        <a href="#" target="_blank" rel="noopener">GitHub</a>
+        <a href="#" target="_blank" rel="noopener">Live demo</a>
+      </div>
+    </article>
+
+    <article class="project-card" style="--accent:var(--gold)">
+      <h3>World Clock</h3>
+      <p>An interactive 50-city dashboard — live timezone conversion, day/night state and a map you can click through.</p>
+      <div class="tags">
+        <span>JavaScript</span><span>GeoJSON</span><span>REST APIs</span><span>Responsive Design</span>
+      </div>
+      <div class="links">
+        <a href="#" target="_blank" rel="noopener">G</a>
+        <a href="#" target="_blank" rel="noopener">Live demo</a>
+      </div>
+    </article>
+
+    <article class="project-card" style="--accent:var(--teal)">
+      <h3>CryptoVerse</h3>
+      <p>A live crypto market tracker pulling real-time prices and charts from public REST APIs.</p>
+      <div class="tags">
+        <span>JavaScript</span><span>REST APIs</span><span>Chart Rendering</span><span>Responsive Design</span>
+      </div>
+      <div class="links">
+        <a href="#" target="_blank" rel="noopener">GitHub</a>
+        <a href="#" target="_blank" rel="noopener">Live demo</a>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<section class="now reveal" id="now">
+  <p class="eyebrow">// 03 — now</p>
+  <h2>Currently</h2>
+  <ul class="now-list">
+    <li>Clearing my final AKTU backlog subjects</li>
+    <li>Learning React patterns beyond the basics</li>
+    <li>Applying to front-end internships, with SSC CHSL as a backup track</li>
+    <li>Open to entry-level front-end roles</li>
+  </ul>
+</section>
+
+<section class="contact reveal" id="contact">
+  <p class="eyebrow">// 04 — contact</p>
+  <h2>Let's talk</h2>
+  <p>Best reached by email — I usually reply within a day.</p>
+  <div class="contact-links">
+    <a href="mailto:you@example.com">jatin123bhargava@gmail.com</a>
+    <a href="https://github.com/yourusername" target="_blank" rel="noopener">GitHub</a>
+    <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener">https://www.linkedin.com/in/jatin-bhargava-985b54236/</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>Handwritten with HTML, CSS &amp; JavaScript. <span id="year"></span></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
